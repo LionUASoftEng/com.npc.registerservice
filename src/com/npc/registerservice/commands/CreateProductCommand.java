@@ -27,27 +27,23 @@ public class CreateProductCommand implements ResultCommandInterface<Product> {
 		
 		return this.apiProduct;
 	}
-																		
+
+	//Properties
+	private Product apiProduct;
+	public Product getApiProduct() {
+		return this.apiProduct;
+	}
+	public CreateProductCommand setApiProduct(Product apiProduct) {
+		this.apiProduct = apiProduct;
+		return this;
+	}
 	
-		
-		
-		
-		//Properties
-		private Product apiProduct;
-		public Product getApiProduct() {
-			return this.apiProduct;
-		}
-		public CreateProductCommand setApiProduct(Product apiProduct) {
-			this.apiProduct = apiProduct;
-			return this;
-		}
-		
-		private ProductRepositoryInterface productRepository;
-		public ProductRepositoryInterface getProductRepository() {
-			return this.productRepository;
-		}
-		public CreateProductCommand setProductRepository(ProductRepositoryInterface productRepository) {
-			this.productRepository = productRepository;
-			return this;
-		}
+	private ProductRepositoryInterface productRepository;
+	public ProductRepositoryInterface getProductRepository() {
+		return this.productRepository;
+	}
+	public CreateProductCommand setProductRepository(ProductRepositoryInterface productRepository) {
+		this.productRepository = productRepository;
+		return this;
+	}
 }

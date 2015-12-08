@@ -22,8 +22,8 @@ import org.npc.models.api.Product;
 
 import com.npc.registerservice.commands.ProductsQuery;
 
-	@Path("product/")
-	public class ProductResource {
+@Path("product/")
+public class ProductResource {
 	@GET
 	@Path("apiv0/products")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -71,5 +71,4 @@ import com.npc.registerservice.commands.ProductsQuery;
 	public String test() {
 		return "Successful test (.../test/)";
 	}
-
 }
